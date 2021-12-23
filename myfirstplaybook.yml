@@ -10,7 +10,7 @@
     apt:
       name: tree
       state: present
-  - name: install wget on ubuntu
+  - name: install wget on ubuntu 
     apt:
       name: wget
       state: present
