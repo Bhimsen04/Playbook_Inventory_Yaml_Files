@@ -1,0 +1,21 @@
+---
+- hosts: 172.31.17.136
+  become: yes
+  tasks:
+  - name: I want to install git on ubuntu
+    apt:
+      name: git
+      state: present
+    tags: mygit
+
+  - name: want to install tree on ubuntu nodes
+    apt:
+      name: tree
+      stateeeee: present
+    tags: mytree
+
+  - name: install wget on ubuntu 
+    apt:
+      name: wget
+      state: present
+    tags: mywget
