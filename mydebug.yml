@@ -1,0 +1,23 @@
+---
+- hosts: 172.31.17.136
+  become: yes
+  tasks:
+  - name: I want to execute linux command directly by playbook
+    command: hostname -f
+    register: myresult
+
+  - name: I want to display my first task result
+    debug: 
+      msg: "{{myresult}}"
+
+  - name: install tree
+    apt: 
+      name: tree
+      state: present
+    when: myresult.stderr == ""
+
+  - name: install git
+    apt: 
+      name: git
+      state: present
+    when: myresult.stderr != ""
