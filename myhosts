@@ -9,7 +9,3 @@
 [myDBservers]
 172.31.17.136
 172.31.18.69
-
-[mywebservers:vars]
-mywebpackageforubntu= apache2
-mywebpackageforredhat= httpd
