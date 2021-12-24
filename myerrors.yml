@@ -10,9 +10,9 @@
   - name: want to install tree on ubuntu nodes
     apt:
       name: tree
-      state: present
+      stateeeee: present
     ignore_errors: yes
-
+    
   - name: install wget on ubuntu 
     apt:
       name: wget
