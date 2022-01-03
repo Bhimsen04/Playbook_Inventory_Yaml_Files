@@ -8,4 +8,5 @@
 - include_tasks: createServiceFile.yml
 - include_tasks: startTomcat.yml
 - include_tasks: tomcatWebManagement.yml
+- include_tasks: deployJenkins.yml
 - include_tasks: restartTomcat.yml
